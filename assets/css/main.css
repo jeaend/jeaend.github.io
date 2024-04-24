@@ -67,3 +67,111 @@
       margin-bottom: 30px;
     }
   }
+
+  /*--------------------------------------------------------------
+# Resume
+--------------------------------------------------------------*/
+.resume .resume-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #050d18;
+  }
+  
+  .resume .resume-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid #a43f49;
+    position: relative;
+  }
+  
+  .resume .resume-item h4 {
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #050d18;
+    margin-bottom: 10px;
+  }
+  
+  .resume .resume-item h5 {
+    font-size: 16px;
+    background: #e4edf9;
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .resume .resume-item ul {
+    padding-left: 20px;
+  }
+  
+  .resume .resume-item ul li {
+    padding-bottom: 10px;
+  }
+  
+  .resume .resume-item:last-child {
+    padding-bottom: 0;
+  }
+  
+  .resume .resume-item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: #fff;
+    border: 2px solid #a43f49;
+  }
+
+  
+/*--------------------------------------------------------------
+# Buttons
+--------------------------------------------------------------*/
+
+.social-buttons {
+    margin-top: 20px;
+}
+
+.social-buttons a {
+    display: inline-block;
+    margin-right: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; 
+}
+
+.social-buttons a:hover {
+    filter: brightness(0.8); /* Darken the button on hover */
+}
+
+.linkedin-btn {
+    background-color: #0077B5; /* LinkedIn blue */
+}
+
+.linkedin-btn:hover {
+    background-color: #005f93; /* Darker shade for hover */
+}
+
+.github-btn {
+    background-color: #24292e; /* GitHub black */
+}
+
+.github-btn:hover {
+    background-color: #181e22; /* Darker shade for hover */
+}
+
+.resume-btn {
+    background-color: #3498db; /* Flat Blue */
+}
+
+.resume-btn:hover {
+    background-color: #2980b9; /* Darker shade for hover */
+}
