@@ -504,6 +504,7 @@ section.my-work .section-heading {
     border-radius: 5px;
 }
 
+
 .lazyload {
     background: #f7f7f7;
 }
@@ -513,19 +514,19 @@ section.my-work .section-heading {
     min-height: 60px;
 }
 
-figure.snip1321 {
+figure.portfolio {
   overflow: hidden;
   text-align: center;
   -webkit-perspective: 50em;
   perspective: 50em;
 }
-figure.snip1321 * {
+figure.portfolio * {
   -webkit-box-sizing: padding-box;
   box-sizing: padding-box;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
-figure.snip1321 figcaption {
+figure.portfolio figcaption {
   top: 50%;
   left: 20px;
   right: 20px;
@@ -533,31 +534,32 @@ figure.snip1321 figcaption {
   opacity: 0;
   z-index: 1;
 }
-figure.snip1321 h4 {
+figure.portfolio h4, p {
     margin-top: 15px;
   margin-bottom: 5px;
   color: #232323;
 }
-figure.snip1321 span {
+figure.portfolio span {
     font-size: 14px;
     font-style: italic;
     display: block;
     color: #7a7a7a;
 }
-figure.snip1321 i {
+figure.portfolio i {
   position: relative!important;
-  font-size: 18px;
-  background-color: #a43f49;
-  width: 40px;
+  font-size: 24px;
+  background-color: #d3d3d3;
+  width: 80px;
   height: 40px;
+  margin-top: 15px;
   display: inline-block;
   text-align: center;
   line-height: 40px;
-  border-radius: 5px;
-  color: #fff;
+  border-radius: 10px;
+  color: #7a7a7a;
 }
-figure.snip1321:after {
-  background-color: #ffffff;
+figure.portfolio:after {
+  background-color: #fff;
   position: absolute;
   content: "";
   display: block;
@@ -572,30 +574,29 @@ figure.snip1321:after {
   -webkit-transform-origin: 50% 50%;
   -ms-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
-  opacity: 0;
+  opacity: 0.97;
 }
-figure.snip1321 a {
+figure.portfolio a {
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
   z-index: 1;
 }
-figure.snip1321:hover figcaption,
-figure.snip1321.hover figcaption {
+figure.portfolio:hover figcaption,
+figure.portfolio.hover figcaption {
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 1;
   -webkit-transition-delay: 0.2s;
   transition-delay: 0.2s;
 }
-figure.snip1321:hover:after,
-figure.snip1321.hover:after {
+figure.portfolio:hover:after,
+figure.portfolio.hover:after {
   -webkit-transform: rotateX(0);
   transform: rotateX(0);
-  opacity: 0.9;
+  opacity: 0.95;
 }
-
 
 /* Contact Me */
 
