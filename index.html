@@ -307,7 +307,7 @@
                   </figure>
                 </div>
               
-                <div class="isotope-item" data-type="PYTHON">
+                <div class="isotope-item" data-type="SQL">
                   <figure class="portfolio">
                     <img src="assets/images/Chart_Example.jpeg" alt="sq-sample26" />
                     <figcaption>
@@ -386,28 +386,6 @@
       $(window).scroll(function() {
         checkSection();
       });
-
-      $(document).ready(function() {
-      // Show all projects initially
-      $(".isotope-item").show();
-
-      // Handler for radio button change event
-      $("input[name='isotope-filter']").change(function() {
-        var filterValue = $(this).data('type');
-        
-        if (filterValue === '*') {
-          // Show all projects
-          $(".isotope-item").show();
-        } else {
-          // Hide all projects
-          $(".isotope-item").hide();
-
-          // Show projects that belong to the selected category
-          $(".isotope-item[data-type*='" + filterValue + "']").show();
-        }
-      });
-    });
-
     </script>
   </body>
 </html>
