@@ -1,20 +1,20 @@
+
+/*--------------------------------------------------------------
+# Top Section
+--------------------------------------------------------------*/
+.section.front-matter .section-heading .line-dec {
+  margin-bottom: 40px;
+}
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
+    margin-top: 60px;
+    margin-bottom: 60px;
     width: 100%;
     height: 100;
     background-size: cover;
-  }
-  
-  #hero:before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
   }
   
   #hero .hero-container {
@@ -139,12 +139,12 @@
 
 .button-links {
   display: flex; /* Make the links flex items */
-  flex-direction: column; /* Stack items vertically */
+  flex-direction: row; /* Stack items vertically */
+  gap: 8px;
   align-items: center; /* Center items horizontally */
 }
 
 .button-links a {
-  margin: 10px 0; /* Add spacing between links */
   padding: 15px 25px; /* Adjust padding to make the buttons bigger */
   font-size: 16px; /* Font size */
   text-decoration: none; /* Remove underline */
@@ -152,6 +152,8 @@
   background-color: #fff; /* Set background color */
   border: 2px solid #000; /* Add border */
   border-radius: 5px; /* Add border radius */
+  width: 152px;
+  text-align: center;
 }
 
 .button-links a:hover {
@@ -159,29 +161,14 @@
   color: #fff; /* Change font color on hover */
 }
 
-.linkedin-btn {
-  background-color: #0077B5; /* LinkedIn blue */
+@media screen and (max-width: 845px) { 
+  .button-links {
+    width: 100%;
+  }
+  .button-links a {
+    width: 80%;
+  }
+  .button-links {
+    flex-direction: column;
+  }
 }
-
-.linkedin-btn:hover {
-  background-color: #005f93; /* Darker shade for hover */
-}
-
-.github-btn {
-  background-color: #24292e; /* GitHub black */
-}
-
-.github-btn:hover {
-  background-color: #181e22; /* Darker shade for hover */
-}
-
-.resume-btn {
-  background-color: #3498db; /* Flat Blue */
-}
-
-.resume-btn:hover {
-  background-color: #2980b9; /* Darker shade for hover */
-}
-
-
-
