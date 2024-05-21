@@ -46,7 +46,7 @@
     padding-bottom: 4px;
     padding-top: 4px;
     letter-spacing: 1px;
-    border-bottom: 3px solid #a43f49;
+    border-bottom: 3px solid #64795d;
   }
   
   @media (min-width: 1024px) {
@@ -82,7 +82,7 @@
   .resume .resume-item {
     padding: 0 0 20px 20px;
     margin-top: -2px;
-    border-left: 2px solid #a43f49;
+    border-left: 2px solid #64795d;
     position: relative;
   }
   
@@ -98,7 +98,7 @@
   
   .resume .resume-item h5 {
     font-size: 16px;
-    background: #a43f49;
+    background: #64795d;
     padding: 5px 15px;
     display: inline-block;
     font-weight: 600;
@@ -126,7 +126,7 @@
     left: -9px;
     top: 0;
     background: #fff;
-    border: 2px solid #a43f49;
+    border: 2px solid #64795d;
   }
 
   
