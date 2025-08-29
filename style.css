@@ -1,0 +1,160 @@
+/* Global reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Accent color from CV */
+:root {
+  --accent: #DC3522;
+}
+
+/* Layout grid */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr; 
+  min-height: 100vh;
+}
+@media (min-width: 900px) {
+  .grid-2 {
+    grid-template-columns: 1fr 2fr; /* 33% sidebar, 67% content */
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #101214;
+  color: #7A7C80;
+}
+
+h2,
+.white {
+  color: #fff;
+}
+a {
+  color: #7A7C80;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+a:hover {
+  color: var(--accent);
+}
+
+/* Sidebar */
+.section-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 24px;
+  height: 100vh;
+  border-bottom: 1px solid #1e2024;
+}
+@media (min-width: 900px) {
+  .section-1 {
+    position: sticky;
+    top: 0;
+    border-bottom: none;
+    border-right: 1px solid #1e2024; 
+  }
+}
+
+.profile-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #2a2d33;
+}
+@media (max-width: 600px) {
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.section-1 h2 {
+  font-size: 1.7rem;
+  margin: 10px 0;
+}
+.section-1 p {
+  font-size: 1.1rem;
+  margin: 0 0 10px;
+}
+.section-1 a {
+  font-size: 1.4rem;
+  padding: 8px;
+}
+.socials a:hover {
+  color: var(--accent);
+}
+
+/* Resume button */
+.btn-resume {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 6px 14px;
+  border-radius: 4px;
+  border: 1px solid #7A7C80;
+  color: #7A7C80;
+  background: transparent;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+.btn-resume:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* Main content */
+.section-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+  max-width: 700px;
+  margin: 0 auto;
+  height: 100vh;
+  overflow: hidden; 
+}
+
+.section-2 h2 {
+  margin: 1.2rem 0 0.5rem;
+}
+
+.section-2 p {
+  font-size: 1.1rem;
+  margin: 0 0 1rem;
+}
+
+.section-2 a {
+  display: block;
+  padding: 5px 0;
+  font-size: 1rem;
+}
+
+/* Responsive tweaks */
+@media (max-width: 900px) {
+  .section-1 {
+    height: auto;
+    padding: 40px 24px;
+    border-right: none;
+  }
+  .section-2 {
+    height: auto;
+    padding: 24px;
+    overflow: visible; 
+  }
+}
